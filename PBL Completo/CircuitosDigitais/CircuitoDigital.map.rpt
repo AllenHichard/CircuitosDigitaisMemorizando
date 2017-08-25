@@ -1,0 +1,387 @@
+Analysis & Synthesis report for CircuitoDigital
+Mon Aug 17 17:47:29 2015
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Registers Removed During Synthesis
+  8. General Register Statistics
+  9. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                               ;
++-----------------------------+----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Mon Aug 17 17:47:29 2015        ;
+; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name               ; CircuitoDigital                              ;
+; Top-level Entity Name       ; CircuitoDigital                              ;
+; Family                      ; ACEX1K                                       ;
+; Total logic elements        ; 164                                          ;
+; Total pins                  ; 32                                           ;
+; Total memory bits           ; 0                                            ;
+; Total PLLs                  ; 0                                            ;
++-----------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                    ;
++--------------------------------------------------------------+-----------------+-----------------+
+; Option                                                       ; Setting         ; Default Value   ;
++--------------------------------------------------------------+-----------------+-----------------+
+; Device                                                       ; EP1K100QC208-3  ;                 ;
+; Top-level entity name                                        ; CircuitoDigital ; CircuitoDigital ;
+; Family name                                                  ; ACEX1K          ; Stratix II      ;
+; Use Generated Physical Constraints File                      ; Off             ;                 ;
+; Use smart compilation                                        ; Off             ; Off             ;
+; Create Debugging Nodes for IP Cores                          ; Off             ; Off             ;
+; Preserve fewer node names                                    ; On              ; On              ;
+; Disable OpenCore Plus hardware evaluation                    ; Off             ; Off             ;
+; Verilog Version                                              ; Verilog_2001    ; Verilog_2001    ;
+; VHDL Version                                                 ; VHDL93          ; VHDL93          ;
+; State Machine Processing                                     ; Auto            ; Auto            ;
+; Safe State Machine                                           ; Off             ; Off             ;
+; Extract Verilog State Machines                               ; On              ; On              ;
+; Extract VHDL State Machines                                  ; On              ; On              ;
+; Ignore Verilog initial constructs                            ; Off             ; Off             ;
+; Iteration limit for constant Verilog loops                   ; 5000            ; 5000            ;
+; Iteration limit for non-constant Verilog loops               ; 250             ; 250             ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On              ; On              ;
+; Parallel Synthesis                                           ; Off             ; Off             ;
+; NOT Gate Push-Back                                           ; On              ; On              ;
+; Power-Up Don't Care                                          ; On              ; On              ;
+; Remove Redundant Logic Cells                                 ; Off             ; Off             ;
+; Remove Duplicate Registers                                   ; On              ; On              ;
+; Ignore CARRY Buffers                                         ; Off             ; Off             ;
+; Ignore CASCADE Buffers                                       ; Off             ; Off             ;
+; Ignore GLOBAL Buffers                                        ; Off             ; Off             ;
+; Ignore ROW GLOBAL Buffers                                    ; Off             ; Off             ;
+; Ignore LCELL Buffers                                         ; Off             ; Off             ;
+; Ignore SOFT Buffers                                          ; On              ; On              ;
+; Limit AHDL Integers to 32 Bits                               ; Off             ; Off             ;
+; Auto Implement in ROM                                        ; Off             ; Off             ;
+; Optimization Technique                                       ; Area            ; Area            ;
+; Carry Chain Length                                           ; 32              ; 32              ;
+; Cascade Chain Length                                         ; 2               ; 2               ;
+; Auto Carry Chains                                            ; On              ; On              ;
+; Auto Open-Drain Pins                                         ; On              ; On              ;
+; Auto ROM Replacement                                         ; On              ; On              ;
+; Auto RAM Replacement                                         ; On              ; On              ;
+; Auto Clock Enable Replacement                                ; On              ; On              ;
+; Strict RAM Replacement                                       ; Off             ; Off             ;
+; Auto Resource Sharing                                        ; Off             ; Off             ;
+; Allow Any RAM Size For Recognition                           ; Off             ; Off             ;
+; Allow Any ROM Size For Recognition                           ; Off             ; Off             ;
+; Use LogicLock Constraints during Resource Balancing          ; On              ; On              ;
+; Ignore translate_off and synthesis_off directives            ; Off             ; Off             ;
+; Show Parameter Settings Tables in Synthesis Report           ; On              ; On              ;
+; HDL message level                                            ; Level2          ; Level2          ;
+; Suppress Register Optimization Related Messages              ; Off             ; Off             ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100             ; 100             ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100             ; 100             ;
+; Block Design Naming                                          ; Auto            ; Auto            ;
+; Synthesis Effort                                             ; Auto            ; Auto            ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On              ; On              ;
+; Analysis & Synthesis Message Level                           ; Medium          ; Medium          ;
++--------------------------------------------------------------+-----------------+-----------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                               ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                               ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+
+; CircuitoDigital.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/CircuitoDigital.bdf       ;
+; ControleLeds.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/ControleLeds.bdf          ;
+; PBL1.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/PBL1.bdf                  ;
+; PBL1-2.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/PBL1-2.bdf                ;
+; OriginalA.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/OriginalA.bdf             ;
+; OriginalB.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/OriginalB.bdf             ;
+; OriginalC.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/OriginalC.bdf             ;
+; OriginalD.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/OriginalD.bdf             ;
+; OriginalE.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/OriginalE.bdf             ;
+; OriginalF.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/OriginalF.bdf             ;
+; OriginalG.bdf                    ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/OriginalG.bdf             ;
+; MultiplexadorComplexo.bdf        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/MultiplexadorComplexo.bdf ;
+; Seletor.bdf                      ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/Seletor.bdf               ;
+; Contador.bdf                     ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/Contador.bdf              ;
+; Comparador8bits.bdf              ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/Comparador8bits.bdf       ;
+; PrimeiroByte.bdf                 ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/PrimeiroByte.bdf          ;
+; Encod.bdf                        ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/Encod.bdf                 ;
+; MemoriaBiestavel.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/MemoriaBiestavel.bdf      ;
+; multiplexador8x1.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/multiplexador8x1.bdf      ;
+; Multiplexador64x8.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/Multiplexador64x8.bdf     ;
+; PBL3.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/PBL3.bdf                  ;
+; mux3x1.bdf                       ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/mux3x1.bdf                ;
+; Multiplexador12x4.bdf            ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/Multiplexador12x4.bdf     ;
+; Seletorde2bits.bdf               ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/Seletorde2bits.bdf        ;
+; InversorPositivo.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/allen/Desktop/PBL Completo Versao Final/CircuitoDigital/InversorPositivo.bdf      ;
++----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                ;
++--------------------------------+-------------------------------------------+
+; Resource                       ; Usage                                     ;
++--------------------------------+-------------------------------------------+
+; Total logic elements           ; 164                                       ;
+; Total combinational functions  ; 164                                       ;
+;     -- Total 4-input functions ; 106                                       ;
+;     -- Total 3-input functions ; 47                                        ;
+;     -- Total 2-input functions ; 6                                         ;
+;     -- Total 1-input functions ; 5                                         ;
+;     -- Total 0-input functions ; 0                                         ;
+; Total registers                ; 64                                        ;
+; I/O pins                       ; 32                                        ;
+; Maximum fan-out node           ; PBL3:inst14|Comparador8bits:inst4|inst8~3 ;
+; Maximum fan-out                ; 56                                        ;
+; Total fan-out                  ; 680                                       ;
+; Average fan-out                ; 3.47                                      ;
++--------------------------------+-------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                   ;
++-----------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node        ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                         ; Library Name ;
++-----------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------+--------------+
+; |CircuitoDigital                  ; 164 (0)     ; 64           ; 0           ; 32   ; 100 (0)      ; 0 (0)             ; 64 (0)           ; 0 (0)           ; 0 (0)      ; |CircuitoDigital                                                            ; work         ;
+;    |ControleLeds:inst8|           ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|ControleLeds:inst8                                         ; work         ;
+;    |Multiplexador12x4:inst7|      ; 9 (0)       ; 0            ; 0           ; 0    ; 9 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|Multiplexador12x4:inst7                                    ; work         ;
+;       |mux3x1:inst1|              ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|Multiplexador12x4:inst7|mux3x1:inst1                       ; work         ;
+;       |mux3x1:inst2|              ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|Multiplexador12x4:inst7|mux3x1:inst2                       ; work         ;
+;       |mux3x1:inst3|              ; 3 (3)       ; 0            ; 0           ; 0    ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|Multiplexador12x4:inst7|mux3x1:inst3                       ; work         ;
+;       |mux3x1:inst|               ; 2 (2)       ; 0            ; 0           ; 0    ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|Multiplexador12x4:inst7|mux3x1:inst                        ; work         ;
+;    |MultiplexadorComplexo:inst6|  ; 22 (22)     ; 0            ; 0           ; 0    ; 22 (22)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|MultiplexadorComplexo:inst6                                ; work         ;
+;    |PBL1-2:inst1|                 ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL1-2:inst1                                               ; work         ;
+;    |PBL1:inst|                    ; 5 (5)       ; 0            ; 0           ; 0    ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL1:inst                                                  ; work         ;
+;    |PBL3:inst14|                  ; 118 (0)     ; 62           ; 0           ; 0    ; 56 (0)       ; 0 (0)             ; 62 (0)           ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14                                                ; work         ;
+;       |Comparador8bits:inst4|     ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Comparador8bits:inst4                          ; work         ;
+;       |Contador:inst15|           ; 3 (3)       ; 3            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Contador:inst15                                ; work         ;
+;       |Contador:inst9|            ; 3 (3)       ; 3            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Contador:inst9                                 ; work         ;
+;       |MemoriaBiestavel:inst12|   ; 64 (0)      ; 56           ; 0           ; 0    ; 8 (0)        ; 0 (0)             ; 56 (0)           ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|MemoriaBiestavel:inst12                        ; work         ;
+;          |PrimeiroByte:inst16|    ; 8 (8)       ; 7            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst16    ; work         ;
+;          |PrimeiroByte:inst17|    ; 8 (8)       ; 7            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst17    ; work         ;
+;          |PrimeiroByte:inst18|    ; 8 (8)       ; 7            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst18    ; work         ;
+;          |PrimeiroByte:inst20|    ; 8 (8)       ; 7            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst20    ; work         ;
+;          |PrimeiroByte:inst24|    ; 8 (8)       ; 7            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst24    ; work         ;
+;          |PrimeiroByte:inst28|    ; 8 (8)       ; 7            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst28    ; work         ;
+;          |PrimeiroByte:inst32|    ; 8 (8)       ; 7            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst32    ; work         ;
+;          |PrimeiroByte:inst|      ; 8 (8)       ; 7            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 7 (7)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst      ; work         ;
+;       |Multiplexador64x8:inst3|   ; 42 (0)      ; 0            ; 0           ; 0    ; 42 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Multiplexador64x8:inst3                        ; work         ;
+;          |multiplexador8x1:inst2| ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst2 ; work         ;
+;          |multiplexador8x1:inst3| ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst3 ; work         ;
+;          |multiplexador8x1:inst4| ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst4 ; work         ;
+;          |multiplexador8x1:inst6| ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst6 ; work         ;
+;          |multiplexador8x1:inst7| ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst7 ; work         ;
+;          |multiplexador8x1:inst8| ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst8 ; work         ;
+;          |multiplexador8x1:inst|  ; 6 (6)       ; 0            ; 0           ; 0    ; 6 (6)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst  ; work         ;
+;    |Seletor:inst5|                ; 1 (1)       ; 0            ; 0           ; 0    ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|Seletor:inst5                                              ; work         ;
+;    |Seletorde2bits:inst4|         ; 2 (2)       ; 2            ; 0           ; 0    ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |CircuitoDigital|Seletorde2bits:inst4                                       ; work         ;
++-----------------------------------+-------------+--------------+-------------+------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                    ;
++--------------------------------------------------------------+----------------------------------------+
+; Register name                                                ; Reason for Removal                     ;
++--------------------------------------------------------------+----------------------------------------+
+; PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst|inst   ; Stuck at GND due to stuck port data_in ;
+; PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst17|inst ; Stuck at GND due to stuck port data_in ;
+; PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst16|inst ; Stuck at GND due to stuck port data_in ;
+; PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst18|inst ; Stuck at GND due to stuck port data_in ;
+; PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst24|inst ; Stuck at GND due to stuck port data_in ;
+; PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst20|inst ; Stuck at GND due to stuck port data_in ;
+; PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst28|inst ; Stuck at GND due to stuck port data_in ;
+; PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst32|inst ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 8                        ;                                        ;
++--------------------------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 64    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 2     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Mon Aug 17 17:47:27 2015
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off CircuitoDigital -c CircuitoDigital
+Info: Found 1 design units, including 1 entities, in source file CircuitoDigital.bdf
+    Info: Found entity 1: CircuitoDigital
+Info: Found 1 design units, including 1 entities, in source file ColunaA.bdf
+    Info: Found entity 1: ColunaA
+Info: Found 1 design units, including 1 entities, in source file ColunaB.bdf
+    Info: Found entity 1: ColunaB
+Info: Found 1 design units, including 1 entities, in source file ColunaC.bdf
+    Info: Found entity 1: ColunaC
+Info: Found 1 design units, including 1 entities, in source file ColunaD.bdf
+    Info: Found entity 1: ColunaD
+Info: Found 1 design units, including 1 entities, in source file ColunaE.bdf
+    Info: Found entity 1: ColunaE
+Info: Found 1 design units, including 1 entities, in source file ColunaF.bdf
+    Info: Found entity 1: ColunaF
+Info: Found 1 design units, including 1 entities, in source file ColunaG.bdf
+    Info: Found entity 1: ColunaG
+Info: Found 1 design units, including 1 entities, in source file ControleLeds.bdf
+    Info: Found entity 1: ControleLeds
+Info: Found 1 design units, including 1 entities, in source file DemultiplexadorColuna.bdf
+    Info: Found entity 1: DemultiplexadorColuna
+Info: Found 1 design units, including 1 entities, in source file DemultiplexadorLinha.bdf
+    Info: Found entity 1: DemultiplexadorLinha
+Info: Found 1 design units, including 1 entities, in source file DivisorFrequencia.bdf
+    Info: Found entity 1: DivisorFrequencia
+Info: Found 1 design units, including 1 entities, in source file Linha0.bdf
+    Info: Found entity 1: Linha0
+Info: Found 1 design units, including 1 entities, in source file Linha1.bdf
+    Info: Found entity 1: Linha1
+Info: Found 1 design units, including 1 entities, in source file Linha2.bdf
+    Info: Found entity 1: Linha2
+Info: Found 1 design units, including 1 entities, in source file Linha3.bdf
+    Info: Found entity 1: Linha3
+Info: Found 1 design units, including 1 entities, in source file Linha4.bdf
+    Info: Found entity 1: Linha4
+Info: Found 1 design units, including 1 entities, in source file Linha5.bdf
+    Info: Found entity 1: Linha5
+Info: Found 1 design units, including 1 entities, in source file Linha6.bdf
+    Info: Found entity 1: Linha6
+Info: Found 1 design units, including 1 entities, in source file Mux2x1.bdf
+    Info: Found entity 1: Mux2x1
+Info: Found 1 design units, including 1 entities, in source file mux8x4.bdf
+    Info: Found entity 1: mux8x4
+Info: Found 1 design units, including 1 entities, in source file mux14x7.bdf
+    Info: Found entity 1: mux14x7
+Info: Found 1 design units, including 1 entities, in source file PBL1.bdf
+    Info: Found entity 1: PBL1
+Info: Found 1 design units, including 1 entities, in source file PBL1-2.bdf
+    Info: Found entity 1: PBL1-2
+Info: Found 1 design units, including 1 entities, in source file OriginalA.bdf
+    Info: Found entity 1: OriginalA
+Info: Found 1 design units, including 1 entities, in source file OriginalB.bdf
+    Info: Found entity 1: OriginalB
+Info: Found 1 design units, including 1 entities, in source file OriginalC.bdf
+    Info: Found entity 1: OriginalC
+Info: Found 1 design units, including 1 entities, in source file OriginalD.bdf
+    Info: Found entity 1: OriginalD
+Info: Found 1 design units, including 1 entities, in source file OriginalE.bdf
+    Info: Found entity 1: OriginalE
+Info: Found 1 design units, including 1 entities, in source file OriginalF.bdf
+    Info: Found entity 1: OriginalF
+Info: Found 1 design units, including 1 entities, in source file OriginalG.bdf
+    Info: Found entity 1: OriginalG
+Info: Found 1 design units, including 1 entities, in source file MultiplexadorComplexo.bdf
+    Info: Found entity 1: MultiplexadorComplexo
+Info: Found 1 design units, including 1 entities, in source file Seletor.bdf
+    Info: Found entity 1: Seletor
+Info: Found 1 design units, including 1 entities, in source file PBL2Finalizado.bdf
+    Info: Found entity 1: PBL2Finalizado
+Info: Found 1 design units, including 1 entities, in source file Contador.bdf
+    Info: Found entity 1: Contador
+Info: Found 1 design units, including 1 entities, in source file Comparador8bits.bdf
+    Info: Found entity 1: Comparador8bits
+Info: Found 1 design units, including 1 entities, in source file PrimeiroByte.bdf
+    Info: Found entity 1: PrimeiroByte
+Info: Found 1 design units, including 1 entities, in source file ContadorTest.bdf
+    Info: Found entity 1: ContadorTest
+Info: Found 1 design units, including 1 entities, in source file Encod.bdf
+    Info: Found entity 1: Encod
+Info: Found 1 design units, including 1 entities, in source file MemoriaBiestavel.bdf
+    Info: Found entity 1: MemoriaBiestavel
+Info: Found 1 design units, including 1 entities, in source file multiplexador8x1.bdf
+    Info: Found entity 1: multiplexador8x1
+Info: Found 1 design units, including 1 entities, in source file Multiplexador64x8.bdf
+    Info: Found entity 1: Multiplexador64x8
+Info: Found 1 design units, including 1 entities, in source file PBL3.bdf
+    Info: Found entity 1: PBL3
+Info: Found 1 design units, including 1 entities, in source file mux3x1.bdf
+    Info: Found entity 1: mux3x1
+Info: Found 1 design units, including 1 entities, in source file Multiplexador12x4.bdf
+    Info: Found entity 1: Multiplexador12x4
+Info: Found 1 design units, including 1 entities, in source file Seletorde2bits.bdf
+    Info: Found entity 1: Seletorde2bits
+Info: Found 1 design units, including 1 entities, in source file InversorPositivo.bdf
+    Info: Found entity 1: InversorPositivo
+Info: Elaborating entity "CircuitoDigital" for the top level hierarchy
+Info: Elaborating entity "PBL1-2" for hierarchy "PBL1-2:inst1"
+Info: Elaborating entity "InversorPositivo" for hierarchy "InversorPositivo:inst2"
+Info: Elaborating entity "PBL3" for hierarchy "PBL3:inst14"
+Info: Elaborating entity "Multiplexador64x8" for hierarchy "PBL3:inst14|Multiplexador64x8:inst3"
+Info: Elaborating entity "multiplexador8x1" for hierarchy "PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst"
+Info: Elaborating entity "Contador" for hierarchy "PBL3:inst14|Contador:inst15"
+Info: Elaborating entity "MemoriaBiestavel" for hierarchy "PBL3:inst14|MemoriaBiestavel:inst12"
+Info: Elaborating entity "PrimeiroByte" for hierarchy "PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst"
+Info: Elaborating entity "Comparador8bits" for hierarchy "PBL3:inst14|Comparador8bits:inst4"
+Info: Elaborating entity "Encod" for hierarchy "PBL3:inst14|Encod:inst13"
+Info: Elaborating entity "MultiplexadorComplexo" for hierarchy "MultiplexadorComplexo:inst6"
+Info: Elaborating entity "OriginalA" for hierarchy "MultiplexadorComplexo:inst6|OriginalA:inst"
+Warning: Primitive "NOT" of instance "inst5" not used
+Info: Elaborating entity "OriginalB" for hierarchy "MultiplexadorComplexo:inst6|OriginalB:inst1"
+Info: Elaborating entity "OriginalC" for hierarchy "MultiplexadorComplexo:inst6|OriginalC:inst2"
+Warning: Primitive "NOT" of instance "inst6" not used
+Info: Elaborating entity "OriginalD" for hierarchy "MultiplexadorComplexo:inst6|OriginalD:inst3"
+Info: Elaborating entity "OriginalE" for hierarchy "MultiplexadorComplexo:inst6|OriginalE:inst4"
+Info: Elaborating entity "OriginalF" for hierarchy "MultiplexadorComplexo:inst6|OriginalF:inst5"
+Info: Elaborating entity "OriginalG" for hierarchy "MultiplexadorComplexo:inst6|OriginalG:inst6"
+Info: Elaborating entity "Seletor" for hierarchy "Seletor:inst5"
+Info: Elaborating entity "Multiplexador12x4" for hierarchy "Multiplexador12x4:inst7"
+Info: Elaborating entity "mux3x1" for hierarchy "Multiplexador12x4:inst7|mux3x1:inst"
+Info: Elaborating entity "Seletorde2bits" for hierarchy "Seletorde2bits:inst4"
+Info: Elaborating entity "ControleLeds" for hierarchy "ControleLeds:inst8"
+Info: Elaborating entity "PBL1" for hierarchy "PBL1:inst"
+Warning: Primitive "NOT" of instance "inst19" not used
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "SL1" is stuck at VCC
+Info: Implemented 196 device resources after synthesis - the final resource count might be different
+    Info: Implemented 10 input pins
+    Info: Implemented 22 output pins
+    Info: Implemented 164 logic cells
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 222 megabytes
+    Info: Processing ended: Mon Aug 17 17:47:29 2015
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

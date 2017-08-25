@@ -1,0 +1,146 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2009 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II
+# Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+# Date created = 18:31:25  March 30, 2015
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		CircuitoDigital_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY ACEX1K
+set_global_assignment -name DEVICE "EP1K100QC208-3"
+set_global_assignment -name TOP_LEVEL_ENTITY CircuitoDigital
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:31:25  MARCH 30, 2015"
+set_global_assignment -name LAST_QUARTUS_VERSION "9.0 SP2"
+set_global_assignment -name USE_GENERATED_PHYSICAL_CONSTRAINTS OFF -section_id eda_blast_fpga
+set_global_assignment -name BDF_FILE CircuitoDigital.bdf
+set_global_assignment -name BDF_FILE ColunaA.bdf
+set_global_assignment -name BDF_FILE ColunaB.bdf
+set_global_assignment -name BDF_FILE ColunaC.bdf
+set_global_assignment -name BDF_FILE ColunaD.bdf
+set_global_assignment -name BDF_FILE ColunaE.bdf
+set_global_assignment -name BDF_FILE ColunaF.bdf
+set_global_assignment -name BDF_FILE ColunaG.bdf
+set_global_assignment -name BDF_FILE ControleLeds.bdf
+set_global_assignment -name BDF_FILE DemultiplexadorColuna.bdf
+set_global_assignment -name BDF_FILE DemultiplexadorLinha.bdf
+set_global_assignment -name BDF_FILE DivisorFrequencia.bdf
+set_global_assignment -name BDF_FILE Linha0.bdf
+set_global_assignment -name BDF_FILE Linha1.bdf
+set_global_assignment -name BDF_FILE Linha2.bdf
+set_global_assignment -name BDF_FILE Linha3.bdf
+set_global_assignment -name BDF_FILE Linha4.bdf
+set_global_assignment -name BDF_FILE Linha5.bdf
+set_global_assignment -name BDF_FILE Linha6.bdf
+set_global_assignment -name BDF_FILE Mux2x1.bdf
+set_global_assignment -name BDF_FILE mux8x4.bdf
+set_global_assignment -name BDF_FILE mux14x7.bdf
+set_global_assignment -name BDF_FILE PBL1.bdf
+set_global_assignment -name BDF_FILE "PBL1-2.bdf"
+set_global_assignment -name VECTOR_WAVEFORM_FILE Frequencia.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Mux14.vwf
+set_global_assignment -name ADD_DEFAULT_PINS_TO_SIMULATION_OUTPUT_WAVEFORMS OFF
+set_global_assignment -name VECTOR_WAVEFORM_FILE TesteAux.vwf
+set_global_assignment -name BDF_FILE OriginalA.bdf
+set_global_assignment -name BDF_FILE OriginalB.bdf
+set_global_assignment -name BDF_FILE OriginalC.bdf
+set_global_assignment -name BDF_FILE OriginalD.bdf
+set_global_assignment -name BDF_FILE OriginalE.bdf
+set_global_assignment -name BDF_FILE OriginalF.bdf
+set_global_assignment -name BDF_FILE OriginalG.bdf
+set_global_assignment -name BDF_FILE MultiplexadorComplexo.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TesteMuxOriginal.vwf
+set_global_assignment -name BDF_FILE Seletor.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TesteFinalGeral.vwf
+set_global_assignment -name SIMULATION_MODE FUNCTIONAL
+set_global_assignment -name BDF_FILE PBL2Finalizado.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TestePBL2Finalizado.vwf
+set_global_assignment -name MISC_FILE "/media/RENATO 8GB/PBL/CircuitoDigital/CircuitoDigital.dpf"
+set_global_assignment -name FLEX10K_DEVICE_IO_STANDARD LVTTL/LVCMOS
+set_location_assignment PIN_89 -to L1
+set_location_assignment PIN_90 -to L2
+set_location_assignment PIN_92 -to L3
+set_location_assignment PIN_93 -to L4
+set_location_assignment PIN_97 -to C1
+set_location_assignment PIN_96 -to C2
+set_location_assignment PIN_95 -to C3
+set_location_assignment PIN_94 -to C4
+set_location_assignment PIN_102 -to SL1
+set_location_assignment PIN_103 -to SL2
+set_location_assignment PIN_99 -to SL3
+set_location_assignment PIN_111 -to SL4
+set_global_assignment -name USE_CONFIGURATION_DEVICE ON
+set_location_assignment PIN_114 -to SL5
+set_location_assignment PIN_115 -to SL6
+set_location_assignment PIN_116 -to SL7
+set_location_assignment PIN_101 -to SC1
+set_location_assignment PIN_100 -to SC2
+set_location_assignment PIN_104 -to SC3
+set_location_assignment PIN_113 -to SC4
+set_location_assignment PIN_112 -to SC5
+set_location_assignment PIN_131 -to ColunaSelecionada
+set_location_assignment PIN_128 -to LinhasSelecionada
+set_location_assignment PIN_79 -to ClockSeletorPrincipal
+set_location_assignment PIN_126 -to saidaprincipal1
+set_location_assignment PIN_127 -to saidaprincipal2
+set_location_assignment PIN_121 -to saidaprincipal3
+set_location_assignment PIN_120 -to saidaprincipal4
+set_location_assignment PIN_119 -to saidaprincipal5
+set_location_assignment PIN_125 -to saidaprincipal6
+set_location_assignment PIN_122 -to saidaprincipal7
+set_global_assignment -name MISC_FILE "C:/Users/Renato/Documents/PBL/CircuitoDigital/CircuitoDigital.dpf"
+set_global_assignment -name BDF_FILE Contador.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TesteContador.vwf
+set_global_assignment -name BDF_FILE Comparador8bits.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE ComparadorTest.vwf
+set_global_assignment -name BDF_FILE PrimeiroByte.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE testconclusoes.vwf
+set_global_assignment -name BDF_FILE ContadorTest.bdf
+set_global_assignment -name BDF_FILE Encod.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TestEncod.vwf
+set_global_assignment -name BDF_FILE MemoriaBiestavel.bdf
+set_global_assignment -name BDF_FILE multiplexador8x1.bdf
+set_global_assignment -name BDF_FILE Multiplexador64x8.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TesteFinalPBL3.vwf
+set_global_assignment -name BDF_FILE PBL3.bdf
+set_global_assignment -name BDF_FILE mux3x1.bdf
+set_global_assignment -name BDF_FILE Multiplexador12x4.bdf
+set_global_assignment -name BDF_FILE Seletorde2bits.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TesteAtualPBL2.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE TesteFinal.vwf
+set_global_assignment -name BDF_FILE InversorPositivo.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE MemoriaDisplay.vwf
+set_global_assignment -name INCREMENTAL_VECTOR_INPUT_SOURCE TesteFinal.vwf
+set_global_assignment -name MISC_FILE "/media/ALLEN/engenharia de computação/PBL Completo Versao Final/CircuitoDigital/CircuitoDigital.dpf"
+set_location_assignment PIN_134 -to ButtonPrincipal
+set_location_assignment PIN_132 -to MemoriaSelecionada

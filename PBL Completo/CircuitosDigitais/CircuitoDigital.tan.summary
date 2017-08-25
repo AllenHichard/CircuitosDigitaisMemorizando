@@ -1,0 +1,86 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 15.900 ns
+From           : L4
+To             : PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst32|inst4
+From Clock     : --
+To Clock       : ClockSeletorPrincipal
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 47.200 ns
+From           : PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst20|inst3
+To             : SC5
+From Clock     : ButtonPrincipal
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case tpd
+Slack          : N/A
+Required Time  : None
+Actual Time    : 36.600 ns
+From           : C3
+To             : saidaprincipal2
+From Clock     : --
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.000 ns
+From           : L1
+To             : PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst20|inst7
+From Clock     : --
+To Clock       : ButtonPrincipal
+Failed Paths   : 0
+
+Type           : Clock Setup: 'ButtonPrincipal'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 200.00 MHz ( period = 5.000 ns )
+From           : PBL3:inst14|Contador:inst9|inst
+To             : PBL3:inst14|Contador:inst9|inst
+From Clock     : ButtonPrincipal
+To Clock       : ButtonPrincipal
+Failed Paths   : 0
+
+Type           : Clock Setup: 'ClockSeletorPrincipal'
+Slack          : N/A
+Required Time  : None
+Actual Time    : Restricted to 200.00 MHz ( period = 5.000 ns )
+From           : PBL3:inst14|Contador:inst15|inst
+To             : PBL3:inst14|Contador:inst15|inst
+From Clock     : ClockSeletorPrincipal
+To Clock       : ClockSeletorPrincipal
+Failed Paths   : 0
+
+Type           : Clock Hold: 'ButtonPrincipal'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : PBL3:inst14|Contador:inst9|inst3
+To             : PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst20|inst7
+From Clock     : ButtonPrincipal
+To Clock       : ButtonPrincipal
+Failed Paths   : 168
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 168
+
+--------------------------------------------------------------------------------------
+
