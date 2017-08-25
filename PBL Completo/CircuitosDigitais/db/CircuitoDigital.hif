@@ -1,0 +1,540 @@
+Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+2
+51
+OFF
+OFF
+OFF
+ON
+ON
+OFF
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+PBL1-2
+# storage
+db|CircuitoDigital.(1).cnf
+db|CircuitoDigital.(1).cnf
+# case_insensitive
+# source_file
+PBL1-2.bdf
+d8cdcba9e867145b592a42a81f8fa2f4
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PBL1-2:inst1
+}
+# macro_sequence
+
+# end
+# entity
+InversorPositivo
+# storage
+db|CircuitoDigital.(2).cnf
+db|CircuitoDigital.(2).cnf
+# case_insensitive
+# source_file
+InversorPositivo.bdf
+58c08e25f67c275eb326f8d6269df672
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+InversorPositivo:inst2
+}
+# macro_sequence
+
+# end
+# entity
+PBL3
+# storage
+db|CircuitoDigital.(3).cnf
+db|CircuitoDigital.(3).cnf
+# case_insensitive
+# source_file
+PBL3.bdf
+b01243977fd416a1bb781fb48e4f5e8b
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PBL3:inst14
+}
+# macro_sequence
+
+# end
+# entity
+Multiplexador64x8
+# storage
+db|CircuitoDigital.(4).cnf
+db|CircuitoDigital.(4).cnf
+# case_insensitive
+# source_file
+Multiplexador64x8.bdf
+57eebec3cd988d99414815032c62215
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PBL3:inst14|Multiplexador64x8:inst3
+}
+# macro_sequence
+
+# end
+# entity
+multiplexador8x1
+# storage
+db|CircuitoDigital.(5).cnf
+db|CircuitoDigital.(5).cnf
+# case_insensitive
+# source_file
+multiplexador8x1.bdf
+c85c39b67d91813d985ff86efd1c7a3f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst
+PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst2
+PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst3
+PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst4
+PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst5
+PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst6
+PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst7
+PBL3:inst14|Multiplexador64x8:inst3|multiplexador8x1:inst8
+}
+# macro_sequence
+
+# end
+# entity
+Contador
+# storage
+db|CircuitoDigital.(6).cnf
+db|CircuitoDigital.(6).cnf
+# case_insensitive
+# source_file
+Contador.bdf
+25e763cee4e4c8a4989a2b96a9a5dc1
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PBL3:inst14|Contador:inst15
+PBL3:inst14|Contador:inst9
+}
+# macro_sequence
+
+# end
+# entity
+MemoriaBiestavel
+# storage
+db|CircuitoDigital.(7).cnf
+db|CircuitoDigital.(7).cnf
+# case_insensitive
+# source_file
+MemoriaBiestavel.bdf
+be84636edbc4498f3c647fa73180b6cb
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PBL3:inst14|MemoriaBiestavel:inst12
+}
+# macro_sequence
+
+# end
+# entity
+PrimeiroByte
+# storage
+db|CircuitoDigital.(8).cnf
+db|CircuitoDigital.(8).cnf
+# case_insensitive
+# source_file
+PrimeiroByte.bdf
+9d9987c21255eb5c61bc9429c79559d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst
+PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst16
+PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst17
+PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst18
+PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst20
+PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst24
+PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst28
+PBL3:inst14|MemoriaBiestavel:inst12|PrimeiroByte:inst32
+}
+# macro_sequence
+
+# end
+# entity
+Comparador8bits
+# storage
+db|CircuitoDigital.(9).cnf
+db|CircuitoDigital.(9).cnf
+# case_insensitive
+# source_file
+Comparador8bits.bdf
+90b6f71566bf4a4149abad34e860296e
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PBL3:inst14|Comparador8bits:inst4
+}
+# macro_sequence
+
+# end
+# entity
+Encod
+# storage
+db|CircuitoDigital.(10).cnf
+db|CircuitoDigital.(10).cnf
+# case_insensitive
+# source_file
+Encod.bdf
+7df682414118bbcbd3d546f2ccbfb037
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PBL3:inst14|Encod:inst13
+}
+# macro_sequence
+
+# end
+# entity
+MultiplexadorComplexo
+# storage
+db|CircuitoDigital.(11).cnf
+db|CircuitoDigital.(11).cnf
+# case_insensitive
+# source_file
+MultiplexadorComplexo.bdf
+9fc9a78a292c48da59e635254ad3077
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MultiplexadorComplexo:inst6
+}
+# macro_sequence
+
+# end
+# entity
+OriginalA
+# storage
+db|CircuitoDigital.(12).cnf
+db|CircuitoDigital.(12).cnf
+# case_insensitive
+# source_file
+OriginalA.bdf
+8eb866bdfdfe609eb7794139c885cef5
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MultiplexadorComplexo:inst6|OriginalA:inst
+}
+# macro_sequence
+
+# end
+# entity
+OriginalB
+# storage
+db|CircuitoDigital.(13).cnf
+db|CircuitoDigital.(13).cnf
+# case_insensitive
+# source_file
+OriginalB.bdf
+935c755b7925b1e3c3d69d5577b83f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MultiplexadorComplexo:inst6|OriginalB:inst1
+}
+# macro_sequence
+
+# end
+# entity
+OriginalC
+# storage
+db|CircuitoDigital.(14).cnf
+db|CircuitoDigital.(14).cnf
+# case_insensitive
+# source_file
+OriginalC.bdf
+c628aedb8e83f0485631d22c6a5a3bc9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MultiplexadorComplexo:inst6|OriginalC:inst2
+}
+# macro_sequence
+
+# end
+# entity
+OriginalD
+# storage
+db|CircuitoDigital.(15).cnf
+db|CircuitoDigital.(15).cnf
+# case_insensitive
+# source_file
+OriginalD.bdf
+78da21a67cff96322a5ebacd9cd2666f
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MultiplexadorComplexo:inst6|OriginalD:inst3
+}
+# macro_sequence
+
+# end
+# entity
+OriginalE
+# storage
+db|CircuitoDigital.(16).cnf
+db|CircuitoDigital.(16).cnf
+# case_insensitive
+# source_file
+OriginalE.bdf
+9abc387b6bbcc5f5b5b504e47fab1a8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MultiplexadorComplexo:inst6|OriginalE:inst4
+}
+# macro_sequence
+
+# end
+# entity
+OriginalF
+# storage
+db|CircuitoDigital.(17).cnf
+db|CircuitoDigital.(17).cnf
+# case_insensitive
+# source_file
+OriginalF.bdf
+848a483d8553919832ebc68dd642759
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MultiplexadorComplexo:inst6|OriginalF:inst5
+}
+# macro_sequence
+
+# end
+# entity
+OriginalG
+# storage
+db|CircuitoDigital.(18).cnf
+db|CircuitoDigital.(18).cnf
+# case_insensitive
+# source_file
+OriginalG.bdf
+aa2c091e69b98b9541993137fc428
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+MultiplexadorComplexo:inst6|OriginalG:inst6
+}
+# macro_sequence
+
+# end
+# entity
+Seletor
+# storage
+db|CircuitoDigital.(19).cnf
+db|CircuitoDigital.(19).cnf
+# case_insensitive
+# source_file
+Seletor.bdf
+d395df6e32377fda4798d33689911c3d
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Seletor:inst5
+}
+# macro_sequence
+
+# end
+# entity
+Multiplexador12x4
+# storage
+db|CircuitoDigital.(20).cnf
+db|CircuitoDigital.(20).cnf
+# case_insensitive
+# source_file
+Multiplexador12x4.bdf
+d4c75ca6e39f7d7de07b92cf887c9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Multiplexador12x4:inst7
+}
+# macro_sequence
+
+# end
+# entity
+mux3x1
+# storage
+db|CircuitoDigital.(21).cnf
+db|CircuitoDigital.(21).cnf
+# case_insensitive
+# source_file
+mux3x1.bdf
+6daa15918dec7f3dea7fa6e9e7d843e8
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Multiplexador12x4:inst7|mux3x1:inst
+Multiplexador12x4:inst7|mux3x1:inst1
+Multiplexador12x4:inst7|mux3x1:inst2
+Multiplexador12x4:inst7|mux3x1:inst3
+}
+# macro_sequence
+
+# end
+# entity
+Seletorde2bits
+# storage
+db|CircuitoDigital.(22).cnf
+db|CircuitoDigital.(22).cnf
+# case_insensitive
+# source_file
+Seletorde2bits.bdf
+b7d2fe11234c9c76a18340cb59e69cd
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+Seletorde2bits:inst4
+}
+# macro_sequence
+
+# end
+# entity
+ControleLeds
+# storage
+db|CircuitoDigital.(23).cnf
+db|CircuitoDigital.(23).cnf
+# case_insensitive
+# source_file
+ControleLeds.bdf
+9884d8fab8db4024f7571d6aa662def9
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+ControleLeds:inst8
+}
+# macro_sequence
+
+# end
+# entity
+PBL1
+# storage
+db|CircuitoDigital.(24).cnf
+db|CircuitoDigital.(24).cnf
+# case_insensitive
+# source_file
+PBL1.bdf
+3d7d26b1f611271154c2bd2954ba4744
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+PBL1:inst
+}
+# macro_sequence
+
+# end
+# entity
+CircuitoDigital
+# storage
+db|CircuitoDigital.(0).cnf
+db|CircuitoDigital.(0).cnf
+# case_insensitive
+# source_file
+CircuitoDigital.bdf
+70de215f246816efc22512c4cb4560
+26
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+
